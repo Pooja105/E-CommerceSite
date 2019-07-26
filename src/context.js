@@ -143,7 +143,7 @@ class ProductProvider extends React.Component {
       subTotal += item.total;
     });
     const tempTax = subTotal * 0.1;
-    const tax = parseFloat(tempTax).toFixed(2);
+    const tax = parseFloat(tempTax.toFixed(2));
     const total = subTotal + tax;
     this.setState({
       cartSubTotal: subTotal,
